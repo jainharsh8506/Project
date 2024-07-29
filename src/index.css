@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bottom-20px {
+  bottom: 20px !important;
+}
+
+@layer utilities {
+  .custom-shape {
+    @apply relative w-72 h-72 bg-white overflow-hidden;
+    clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 60% 100%, 0% 50%);
+  }
+}
+
+.clip-path {
+  clip-path: ellipse(241.08px 206.21px at 50% 50%);
+}
+
+/* Ellipse 465 */
+.ellipse-clip {
+  width: 482.16px;
+  height: 412.43px;
+  left: 886.51px;
+  top: 2226.55px;
+
+  /* Clip-path for ellipse */
+  clip-path: path('M472.071 245.381C472.071 351.568 510.27 413.302 402.99 413.302C295.71 413.302 0.796875 312.853 0.796875 206.666C0.796875 100.478 305.897 0.871582 413.177 0.871582C520.456 0.871582 472.071 139.193 472.071 245.381Z');
+}
+.clipped-element {
+  width: 1020px; /* Set the width of your element */
+  height: 607px; /* Set the height of your element */
+  background-color:#ffffff ;
+  background-size: cover;
+  clip-path: path('M1019.03 573.487C800.191 851.633 987.982 1225.63 617.691 1225.63C-12.2809 1280.16 -681.895 1078.55 -452.405 669.321C-452.405 299.738 -152.225 0.132568 218.066 0.132568C588.356 0.132568 1019.03 203.904 1019.03 573.487Z');
+}
+
+
+.slick-slide > div {
+  margin: 0 15px;
+}
+
+.slick-dots li.slick-active button:before {
+  color:orange !important;
+}
+
+@media (max-width: 781px) {
+  .appointment-container {
+    position: static;
+    margin-top: 20px; /* Add some space between the content and the appointment section */
+  }
+
+  .appointment-container::before {
+    content: "";
+    display: block;
+    height: 100px; /* Adjust the height to add more space */
+  }
+
+  .appointment-container::after {
+    content: "";
+    display: block;
+    height: 50px; /* Adjust the height to add more space */
+  }
+}

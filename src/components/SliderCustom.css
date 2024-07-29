@@ -1,0 +1,31 @@
+/* Hide the next and previous buttons */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+/* Custom styles for dots */
+.slick-dots li button:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+}
+
+.slick-dots li.slick-active button:before {
+  background: #1f2b6c; /* Change the color of the active dot */
+}
+
+/* Custom dot styles */
+.custom-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.custom-dot.active {
+  background-color: #1f2b6c;
+}
