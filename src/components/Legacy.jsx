@@ -96,10 +96,10 @@ export default function Legacy() {
 
 const Card = ({ name, url, review, rating, id }) => {
   return (
-    <div className='bg-[#fcfefe] rounded-[5px] flex mx-2 my-4'>
+    <div className='bg-[#fcfefe] rounded-[5px] flex flex-col lg:flex-row mx-2 my-4' key={id}>
       <img
         src={url}
-        className='max-w-[145.75px] max-h-[187.05px] object-cover'
+        className='w-full lg:max-w-[145.75px] max-h-[187.05px] object-cover'
         alt={name}
       />
       <div className='px-5 py-3 space-y-3'>
