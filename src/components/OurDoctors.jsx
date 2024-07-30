@@ -49,7 +49,7 @@ export default function OurDoctors() {
     <div className="relative ">
     <div className="clipped-element"></div>
 
-    <div className='pb-16 relative w-[95%] mx-auto' >
+    <div className='pb-16 relative w-[90%] max-w-9xl mx-auto' >
           <div className="text-center pt-5 mt-56 text-[#159eec]  text-lg font-bold font-['Work Sans'] uppercase tracking-[2.88px]">
             Trusted Care
           </div>

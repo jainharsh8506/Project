@@ -8,11 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 export const LandingPage = () => {
   return (
     <>
-    <div className="mb-40">
     <Hero />
-    </div>
-   
-    <div className='bg-[#D4E7F4]'>
+    <div className='bg-[#D4E7F4] max-w-9xl mx-auto'>
       <OurDoctors />
     <Aboutus />
       <Legacy />

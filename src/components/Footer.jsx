@@ -2,7 +2,7 @@ import logoIcon from "../assets/logo.png";
 
 export default function Footer() {
   return (
-    <footer className='bg-[#161e54] xl:px-8' aria-labelledby='footer-heading'>
+    <footer className='max-w-9xl mx-auto bg-[#161e54] xl:px-8' aria-labelledby='footer-heading'>
       <h2 id='footer-heading' className='sr-only'>
         Footer
       </h2>

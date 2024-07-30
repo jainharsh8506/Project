@@ -7,9 +7,9 @@ export default function Aboutus() {
   const { aboutCardData } = useContext(DataContext);
   return (
     <div className="relative overflow-hidden">
-      {/* <div className="clipped-element2-background"></div> */}
+      <div className="clipped-element2-background"></div>
       <div className='max-w-9xl w-[90%] mx-auto'>
-        <div className='py-10 md:py-16'>
+        <div className='py-10 md:py-16 relative'>
           <div className='text-center text-[#159eec] text-lg font-bold font-Work-Sans uppercase tracking-[2.88px]'>
             Get in touch
           </div>
@@ -18,12 +18,12 @@ export default function Aboutus() {
           </div>
         </div>
         <div className='flex flex-col md:flex-row gap-4'>
-          <div className='flex flex-col  gap-5  '>
+          <div className='space-y-5 relative w-auto mx-auto'>
             {aboutCardData?.map((val, i) => (
               <Card key={i} index={i} title={val?.title} number={val?.number} />
             ))}
           </div>
-          <div className='content relative  pt-8 lg:pt-0 lg:-mt-5   lg:ml-16  text-[#2574ac] text-[21px] font-medium font-Work-Sans 
+          <div className='content relative  pt-8 lg:pt-0 lg:-mt-5   lg:ml-16  text-[#2574ac] text-[21px] font-medium font-Work-Sans mx-auto lg:max-w-[464.16px]
           leading-[2rem] lg:leading-[63px]'>
             Our hospital is equipped with state-of-the-art technology and facilities to provide a wide range of medical services, from emergency care and surgery to rehabilitation and preventive health programs. We are committed to continuously improving and expanding our services to meet the needs of our community.
             <div className="relative w-[410px] h-[457px]">

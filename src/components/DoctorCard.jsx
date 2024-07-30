@@ -6,7 +6,7 @@ export default function DoctorCard({ url, name, specialist, btnLink }) {
       <img
         alt={name}
         src={url}
-        className='w-full h-72 bg-cover rounded-tl-[5px] rounded-tr-[5px]'
+        className='w-full h-[22rem] bg-cover rounded-tl-[5px] rounded-tr-[5px]'
       />
       
     
