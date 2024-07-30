@@ -1,22 +1,30 @@
 import logoIcon from "../assets/logo.png";
+
 export default function Footer() {
   return (
     <footer className='bg-[#161e54] max-w-9xl mx-auto' aria-labelledby='footer-heading'>
       <h2 id='footer-heading' className='sr-only'>
         Footer
       </h2>
-      <div className='max-w-9xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
+      <div className='max-w-9xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 max-w-[80%]'>
         <div className='xl:grid xl:grid-cols-3 xl:gap-8'>
-          <div className='xl:col-span-1 flex gap-5'>
+          <div className='xl:col-span-1 flex flex-col gap-5'>
             <img
               src={logoIcon}
               className='w-[59.62px] h-[46.40px] relative object-cover'
               alt=''
             />
-            <p className=' text-white text-base font-light font-Open-Sans leading-relaxed'>
+            <p className='text-white text-base font-light font-Open-Sans leading-relaxed'>
               Over past 10+ years of experience and skills in various
               technologies, we built great scalable products.
             </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14875.306539030862!2d72.8792706!3d21.2387222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f003ebda427%3A0x9cc34f150db8ff90!2sAtlanta%20Mall!5e0!3m2!1sen!2sin!4v1722284272046!5m2!1sen!2sin"
+              className='w-full h-56 mt-4 rounded-md'
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
           <div className='mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2 w-full'>
             <div className='grid sm:grid-cols-2 col-span-full w-full md:gap-8 justify-center sm:justify-between'>
@@ -28,40 +36,33 @@ export default function Footer() {
                   <li>
                     <a
                       href='#home'
-                      className=' text-[#ff8e4b] text-sm font-normal font-Inter leading-normal'
+                      className='text-[#ff8e4b] text-sm font-normal font-Inter leading-normal'
                     >
-                      {" "}
-                      Home{" "}
+                      Home
                     </a>
                   </li>
-
                   <li>
                     <a
                       href='#Services'
                       className='text-base text-white hover:text-gray-900'
                     >
-                      {" "}
-                      Services{" "}
+                      Services
                     </a>
                   </li>
-
                   <li>
                     <a
                       href='#Doctors'
                       className='text-base text-white hover:text-gray-900'
                     >
-                      {" "}
-                      Doctors{" "}
+                      Doctors
                     </a>
                   </li>
-
                   <li>
                     <a
                       href='#About'
                       className='text-base text-white hover:text-gray-900'
                     >
-                      {" "}
-                      About{" "}
+                      About
                     </a>
                   </li>
                   <li>
@@ -69,8 +70,7 @@ export default function Footer() {
                       href='#Contact'
                       className='text-base text-white hover:text-gray-900'
                     >
-                      {" "}
-                      Contact{" "}
+                      Contact
                     </a>
                   </li>
                 </ul>
@@ -80,94 +80,30 @@ export default function Footer() {
                   Contact Information
                 </h3>
                 <ul role='list' className='mt-4 space-y-4'>
-                  <li className='flex items-ceter'>
-                    <i className=''>
-                      <svg
-                        width='40px'
-                        height='40px'
-                        viewBox='0 0 24 24'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path
-                          d='M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z'
-                          stroke='white'
-                          strokeWidth='0.5'
-                          strokeLinecap='round'
-                        />
+                  <li className='flex items-center'>
+                    <i>
+                      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9614 15.5276L19.0532 19.4651C18.9256 20.0217 18.4364 20.4112 17.8634 20.4112C8.0083 20.4104 -0.00732422 12.3948 -0.00732422 2.53929C-0.00732422 1.96664 0.38209 1.47679 0.93877 1.34984L4.87627 0.441636C5.44971 0.308746 6.03564 0.606402 6.27393 1.14945L8.09111 5.38773C8.30354 5.88695 8.16025 6.46859 7.74033 6.81156L5.63721 8.50023C6.96455 11.2041 9.16299 13.4026 11.8677 14.7307L13.5896 12.6291C13.9289 12.208 14.5149 12.0623 15.0142 12.2786L19.2524 14.0953C19.7622 14.3635 20.0942 14.9573 19.9614 15.5276Z" fill="white"/>
                       </svg>
                     </i>
                     <p className='text-white pl-2 text-sm font-semibold font-Inter leading-loose'>
                       +917096336561
                     </p>
                   </li>
-                  <li className='flex items-ceter'>
-                    <i className=''>
-                      <svg
-                        width='30px'
-                        height='30px'
-                        viewBox='0 0 24 24'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path
-                          d='M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z'
-                          stroke='white'
-                          strokeWidth='1.5'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        />
-                        <path
-                          d='M12 6V12'
-                          stroke='white'
-                          strokeWidth='1.5'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        />
-                        <path
-                          d='M16.24 16.24L12 12'
-                          stroke='white'
-                          strokeWidth='1.5'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        />
+                  <li className='flex items-center'>
+                    <i>
+                      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.99268 20.4102C4.46924 20.4102 -0.00732422 15.9336 -0.00732422 10.4102C-0.00732422 4.88672 4.46924 0.410156 9.99268 0.410156C15.5161 0.410156 19.9927 4.88672 19.9927 10.4102C19.9927 15.9336 15.5161 20.4102 9.99268 20.4102ZM9.05518 10.4102C9.05518 10.7227 9.21143 11.0156 9.47314 11.1562L13.2231 13.6562C13.6528 13.9766 14.2349 13.8594 14.4888 13.4297C14.8091 13 14.6919 12.418 14.2622 12.1289L10.9302 9.91016V5.09766C10.9302 4.57812 10.5122 4.16016 9.95752 4.16016C9.47314 4.16016 9.02002 4.57812 9.02002 5.09766L9.05518 10.4102Z" fill="white"/>
                       </svg>
                     </i>
                     <p className='text-white pl-2 text-sm font-semibold font-Inter leading-loose'>
                       08:00 AM to 21:00 PM
                     </p>
                   </li>
-                  <li className='flex items-ceter'>
-                    <i className=''>
-                      <svg
-                        version='1.0'
-                        id='Layer_1'
-                        xmlns='http://www.w3.org/2000/svg'
-                        xmlnsXlink='http://www.w3.org/1999/xlink'
-                        width='30px'
-                        height='30px'
-                        viewBox='0 0 64 64'
-                        enableBackground='new 0 0 64 64'
-                        xmlSpace='preserve'
-                      >
-                        <g>
-                          <path
-                            fill='white'
-                            d='M32,0C18.745,0,8,10.745,8,24c0,5.678,2.502,10.671,5.271,15l17.097,24.156C30.743,63.686,31.352,64,32,64
-		s1.257-0.314,1.632-0.844L50.729,39C53.375,35.438,56,29.678,56,24C56,10.745,45.255,0,32,0z M48.087,39h-0.01L32,61L15.923,39
-		h-0.01C13.469,35.469,10,29.799,10,24c0-12.15,9.85-22,22-22s22,9.85,22,22C54,29.799,50.281,35.781,48.087,39z'
-                          />
-                          <path
-                            fill='white'
-                            d='M32,14c-5.523,0-10,4.478-10,10s4.477,10,10,10s10-4.478,10-10S37.523,14,32,14z M32,32
-		c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z'
-                          />
-                          <path
-                            fill='white'
-                            d='M32,10c-7.732,0-14,6.268-14,14s6.268,14,14,14s14-6.268,14-14S39.732,10,32,10z M32,36
-		c-6.627,0-12-5.373-12-12s5.373-12,12-12s12,5.373,12,12S38.627,36,32,36z'
-                          />
-                        </g>
+                  <li className='flex items-center'>
+                    <i>
+                      <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.56689 19.9102C4.52783 17.4023 -0.00732422 11.3242 -0.00732422 7.91016C-0.00732422 3.76797 3.35049 0.410156 7.49268 0.410156C11.6333 0.410156 14.9927 3.76797 14.9927 7.91016C14.9927 11.3242 10.4224 17.4023 8.41846 19.9102C7.93799 20.5078 7.04736 20.5078 6.56689 19.9102ZM7.49268 10.4102C8.87158 10.4102 9.99268 9.28906 9.99268 7.91016C9.99268 6.53125 8.87158 5.41016 7.49268 5.41016C6.11377 5.41016 4.99268 6.53125 4.99268 7.91016C4.99268 9.28906 6.11377 10.4102 7.49268 10.4102Z" fill="white"/>
                       </svg>
                     </i>
                     <p className='text-white pl-2 text-sm font-semibold font-Inter leading-loose'>
@@ -181,7 +117,7 @@ export default function Footer() {
           </div>
         </div>
         <div className='mt-12 border-t border-gray-200 pt-8'>
-          <p className=' text-center text-white text-base font-light font-Open-Sans leading-relaxed'>
+          <p className='text-center text-white text-base font-light font-Open-Sans leading-relaxed'>
             Copyright © 2024 All Rights Reserved by HMS
           </p>
         </div>

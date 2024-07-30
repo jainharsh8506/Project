@@ -8,11 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 import Responsive from '../components/Carousal2';
 export const LandingPage = () => {
   return (
+    <>
+    <Hero />
     <div className='bg-[#D4E7F4] max-w-9xl mx-auto'>
-      <Hero />
       <OurDoctors />
     <Aboutus />
       <Legacy />
     </div>
+    </>
   )
 }

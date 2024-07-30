@@ -56,7 +56,7 @@ export default function Hero() {
 }
 const Appointement = ({ appointmentSelectOptions }) => {
   return (
-    <div className="appointment-container bg-white px-8 pb-5 h-auto absolute right-0 left-0 -bottom-44 w-5/6 mx-auto rounded-[23px] shadow backdrop-blur-[28.74px]">
+    <div className=" appointment-container bg-white px-8 pb-5 h-auto absolute right-0 left-0 -bottom-44 w-5/6 mx-auto rounded-[23px] shadow backdrop-blur-[28.74px]">
       <div className="text-center py-5 text-[#161e54] text-2xl font-bold font-poppins leading-loose">
         Book an Appointment
       </div>

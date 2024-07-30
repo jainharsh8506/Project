@@ -1,9 +1,64 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import starIcon from "../assets/star.svg";
 import blueStarIcon from "../assets/blue-star.svg";
 import DataContext from "../context/useContext";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./SliderCustom.css"; // Import your custom CSS
+
 export default function Legacy() {
   const { legacyCard } = useContext(DataContext);
+  var settings = {
+    dots: true,
+    infinite: false,
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesPerRow: 1,
+    rows: 2,
+    speed: 500,
+    initialSlide: 0,
+    arrows: false,
+    className: "center",
+    // centerPadding: "60px",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow:2,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+          infinite: true,
+          dots: true,
+          rows: 2
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          initialSlide: 2,
+          slidesToShow:1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+          infinite: true,
+          dots: true,
+          rows: 1
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          initialSlide: 0,
+          slidesToShow:1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+          infinite: true,
+          dots: true,
+          rows: 1
+        },
+      },
+    ],
+  };
   return (
     <div className='max-w-9xl mx-auto'>
       <div className=' mt-16 py-8'>
@@ -16,9 +71,11 @@ export default function Legacy() {
           <br />
           with a smile to uplift and inspire our patients.
         </div>
-        <div className='grid md:grid-cols-2 gap-12 max-w-5xl w-[90%] mx-auto mt-12'>
-          {legacyCard?.map((val, i) => {
-            return (
+        
+              <div className="slider-container my-8 max-w-9xl lg:w-[70%] md:w-[80%] mx-auto sm:w-[95%]">
+        <Slider {...settings}>
+          {legacyCard?.map((val, i) => (
+            <div key={i}>
               <Card
                 key={i}
                 id={val?.id}
@@ -27,9 +84,10 @@ export default function Legacy() {
                 review={val?.review}
                 rating={val?.rating}
               />
-            );
-          })}
-        </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
       </div>
       </div>
     </div>
@@ -38,7 +96,7 @@ export default function Legacy() {
 
 const Card = ({ name, url, review, rating, id }) => {
   return (
-    <div className='bg-[#fcfefe] rounded-[5px] flex'>
+    <div className='bg-[#fcfefe] rounded-[5px] flex mx-2 my-4'>
       <img
         src={url}
         className='max-w-[145.75px] max-h-[187.05px] object-cover'

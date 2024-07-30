@@ -5,7 +5,9 @@
 .bottom-20px {
   bottom: 20px !important;
 }
-
+body {
+  overflow-x: hidden;
+}
 @layer utilities {
   .custom-shape {
     @apply relative w-72 h-72 bg-white overflow-hidden;
@@ -28,13 +30,33 @@
   clip-path: path('M472.071 245.381C472.071 351.568 510.27 413.302 402.99 413.302C295.71 413.302 0.796875 312.853 0.796875 206.666C0.796875 100.478 305.897 0.871582 413.177 0.871582C520.456 0.871582 472.071 139.193 472.071 245.381Z');
 }
 .clipped-element {
-  width: 1020px; /* Set the width of your element */
-  height: 607px; /* Set the height of your element */
-  background-color:#ffffff ;
-  background-size: cover;
-  clip-path: path('M1019.03 573.487C800.191 851.633 987.982 1225.63 617.691 1225.63C-12.2809 1280.16 -681.895 1078.55 -452.405 669.321C-452.405 299.738 -152.225 0.132568 218.066 0.132568C588.356 0.132568 1019.03 203.904 1019.03 573.487Z');
+  width: -webkit-fill-available; /* Set the width of your element */
+  height: -webkit-fill-available; /* Set the height of your element */
+  background-color: #ffffff; /* Background color of the element */
+  background-size: cover; /* Ensure the background image covers the element */
+  clip-path: path("M1941.81 75.1663C1941.81 584.641 2122.1 880.833 1615.76 880.833C1109.42 880.833 -282.525 398.891 -282.525 -110.583C-282.525 -620.058 1157.5 -1097.96 1663.84 -1097.96C2170.18 -1097.96 1941.81 -434.309 1941.81 75.1663Z");
+  position: absolute; /* Make sure it doesn't affect the layout */
+  top: -50px;
+  left: 0;
+  
 }
 
+.clipped-element2-background {
+  width: -webkit-fill-available; /* Set the width of your element */
+  height: -webkit-fill-available; /* Set the height of your element */
+  background-color: #ffffff; /* Path to your background image */
+  background-size: cover; /* Ensure the background image covers the element */
+  background-position: center; /* Center the background image */
+  clip-path: path("M1018.63 574.062C799.79 852.208 987.581 1226.21 617.29 1226.21C-12.6818 1280.73 -682.296 1079.12 -452.806 669.897C-452.806 300.314 -152.626 0.70813 217.665 0.70813C587.955 0.70813 1018.63 204.48 1018.63 574.062Z");
+  position: absolute; /* Make sure it doesn't affect the layout */
+  top: 0;
+  left: 0;
+}
+
+.z-index-custom{
+  z-index: 2; /* Ensure it is behind the content */
+
+}
 
 .slick-slide > div {
   margin: 0 15px;

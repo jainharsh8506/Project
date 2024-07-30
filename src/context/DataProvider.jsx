@@ -4,6 +4,10 @@ import doctor1 from "../assets/doctor1.jpeg";
 import doctor2 from "../assets/doctor2.jpeg";
 import doctor3 from "../assets/doctor3.jpeg";
 import doctor4 from "../assets/doctor4.jpeg";
+import legacy1 from "../assets/legacy-1.png";
+import legacy2 from "../assets/legacy-2.png";
+import legacy3 from "../assets/legacy-3.png";
+import legacy4 from "../assets/legacy-4.png";
 export default function DataProvider({ children }) {
   const doctorList = [
     {
@@ -64,13 +68,14 @@ export default function DataProvider({ children }) {
   ];
 
   const legacyCard = [
+
     {
       id: 1,
       name: "Mr. Mark Hannery",
       review:
         "Exceptional care and outstanding service - a hospital that truly puts patients first.",
       rating: 3,
-      url: "https://th.bing.com/th/id/OIP.7ZuYwrIdy7FFk5IXAI7bcAHaGl?rs=1&pid=ImgDetMain",
+      url: legacy1,
     },
     {
       id: 2,
@@ -78,7 +83,7 @@ export default function DataProvider({ children }) {
       review:
         "Efficient, reliable, and dedicated to ensuring the well-being of their patients - a hospital you can trust.",
       rating: 4,
-      url: "https://th.bing.com/th/id/OIP.7ZuYwrIdy7FFk5IXAI7bcAHaGl?rs=1&pid=ImgDetMain",
+      url: legacy3,
     },
     {
       id: 1,
@@ -86,7 +91,7 @@ export default function DataProvider({ children }) {
       review:
         "Exceptional care and outstanding service - a hospital that truly puts patients first.",
       rating: 5,
-      url: "https://th.bing.com/th/id/OIP.7ZuYwrIdy7FFk5IXAI7bcAHaGl?rs=1&pid=ImgDetMain",
+      url: legacy2,
     },
     {
       id: 1,
@@ -94,7 +99,7 @@ export default function DataProvider({ children }) {
       review:
         "Exceptional care and outstanding service - a hospital that truly puts patients first.",
       rating: 3,
-      url: "https://th.bing.com/th/id/OIP.7ZuYwrIdy7FFk5IXAI7bcAHaGl?rs=1&pid=ImgDetMain",
+      url: legacy4,
     },
   ];
   const appointmentSelectOptions = [
