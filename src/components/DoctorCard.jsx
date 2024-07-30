@@ -2,12 +2,14 @@ import PropTypes from "prop-types";
 export default function DoctorCard({ url, name, specialist, btnLink }) {
   return (
     <div className='block bg-white'>
+   
       <img
         alt={name}
         src={url}
-        className='w-full object-cover sm:h-80 rounded-tl-[5px] rounded-tr-[5px]'
+        className='w-full h-72 bg-cover rounded-tl-[5px] rounded-tr-[5px]'
       />
-
+      
+    
       <h3 className='text-center my-2 text-[#1f2b6c] text-lg font-bold font-Work-Sans uppercase tracking-[2.88px]'>
         {name}
       </h3>

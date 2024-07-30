@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#1f2b6c] flex items-center p-2 sm:p-4 lg:p-6 xl:p-8 2xl:p-10 max-w-9xl mx-auto">
+    <nav className="bg-[#1f2b6c] flex items-center px-2 sm:px-4 lg:px-6 xl:px-8 2xl:px-10 py-3 max-w-9xl mx-auto">
       <div className="w-full max-w-9xl mx-auto relative">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -17,7 +17,7 @@ export default function Header() {
               <NavBar />
             </div>
           </div>
-          <div className="hidden md:flex items-center space-x-6 xl:space-x-8 2xl:space-x-10">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8 2xl:space-x-10">
             <img src={UKIcon} className="mx-2 w-9 h-4 object-cover" alt="UK Icon" />
             <FaBell className="mx-2 text-white w-7 h-7" />
             <button className="bg-[#159eec] h-10 px-4 rounded-lg text-white text-xs xl:text-sm 2xl:text-base">
@@ -35,7 +35,7 @@ export default function Header() {
           </div>
         </div>
         {isOpen && (
-          <div className="absolute inset-x-1/2 transform -translate-x-1/2 bg-[#1f2b6c] rounded-b-3xl shadow-lg w-[260px] z-50">
+          <div className="absolute  inset-x-1/2 transform -translate-x-1/2 bg-[#1f2b6c] rounded-b-3xl shadow-lg w-[260px] z-50">
             <div className="p-4 space-y-4">
               <NavBar isMobile />
               <div className="text-center">

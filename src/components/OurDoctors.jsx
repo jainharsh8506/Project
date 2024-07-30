@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import DoctorCard from "./DoctorCard";
 import DataContext from "../context/useContext";
 import Slider from "react-slick";
@@ -46,10 +46,10 @@ export default function OurDoctors() {
     ],
   };
   return (
-    <div className="relative">
+    <div className="relative ">
     <div className="clipped-element"></div>
 
-    <div className='relative pb-16 max-w-9xl w-[90%] mx-auto' >
+    <div className='pb-16 relative w-[95%] mx-auto' >
           <div className="text-center pt-5 mt-56 text-[#159eec]  text-lg font-bold font-['Work Sans'] uppercase tracking-[2.88px]">
             Trusted Care
           </div>
