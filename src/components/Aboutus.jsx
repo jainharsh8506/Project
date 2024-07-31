@@ -7,7 +7,7 @@ export default function Aboutus() {
   const { aboutCardData } = useContext(DataContext);
   return (
     <div className="relative overflow-hidden">
-      {/* <div className="clipped-element2-background"></div> */}
+      <div className="clipped-element2-background"></div>
       <div className='max-w-9xl w-[90%] mx-auto'>
         <div className='py-10 md:py-16'>
           <div className='text-center text-[#159eec] text-lg font-bold font-Work-Sans uppercase tracking-[2.88px]'>
@@ -18,7 +18,7 @@ export default function Aboutus() {
           </div>
         </div>
         <div className='flex flex-col md:flex-row gap-4'>
-          <div className='flex flex-col  gap-5  '>
+          <div className='flex flex-col justify-center md:justify-start items-center gap-5  w-full'>
             {aboutCardData?.map((val, i) => (
               <Card key={i} index={i} title={val?.title} number={val?.number} />
             ))}
@@ -58,7 +58,7 @@ const Card = ({ title, number, index }) => (
       background: index === 1 ? "#1f2b6c" : "#e2f3ff",
       color: index !== 1 ? "#1f2b6c" : "#e2f3ff",
     }}
-    className='w-full md:w-fit p-5 rounded-[20px] backdrop-blur-[28.74px]'
+    className='w-[180px] p-5 rounded-[20px] backdrop-blur-[28.74px]'
   >
     <div className=' md:w-[127.88px] text-xl font-bold font-Work-Sans uppercase leading-normal'>
       {title}
